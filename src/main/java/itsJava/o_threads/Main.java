@@ -11,6 +11,7 @@ public class Main {
             } catch (InterruptedException e) {
             }
         });
+
         poke.setDaemon(true);
         poke.start();
 
@@ -33,9 +34,7 @@ public class Main {
         vocals.start();
         vocals.join();
 
-        Thread endSound = new Thread(() -> {
-            System.out.println("ТЫНЦ!");
-        });
+        Thread endSound = new Thread(() -> System.out.println("BA-DUM-TSS!"));
         endSound.start();
     }
 
