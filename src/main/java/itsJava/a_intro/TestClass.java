@@ -1,9 +1,16 @@
-package itsJava.a_Intro;
+package itsJava.a_intro;
 
 public class TestClass {
     private int intParam;
     private double doubleParam;
     private String stringParam;
+
+    public TestClass() {
+    }
+
+    public TestClass(String stringParam) {
+        this.stringParam = stringParam;
+    }
 
     public TestClass(int intParam, double doubleParam, String stringParam) {
         this.intParam = intParam;
